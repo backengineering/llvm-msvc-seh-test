@@ -5,7 +5,7 @@ SEH test for llvm-msvc.
 
 - Visual Studio 2022
 - CMake 3.15+
-- [llvm-msvc](https://github.com/NewWorldComingSoon/llvm-msvc-build/releases)
+- [llvm-msvc](https://github.com/backengineering/llvm-msvc/releases)
 
 ## Building with llvm-msvc
 
