@@ -375,3 +375,25 @@ TEST(SEH, SEH_11)
 
     EXPECT_EQ(2, g_SEH_11);
 }
+
+int g_SEH_12 = 0;
+TEST(SEH, SEH_12)
+{
+    __try
+    {
+        ++g_SEH_12;
+        return;
+    }
+    __finally
+    {
+        if (_abnormal_termination())
+        {
+            ++g_SEH_12;
+            printf("Passed\n");
+        }
+        else
+        {
+            printf("Failed\n");
+        }
+    }
+}
