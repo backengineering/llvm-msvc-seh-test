@@ -396,4 +396,5 @@ TEST(SEH, SEH_12)
             printf("Failed\n");
         }
     }
+    EXPECT_EQ(2, g_SEH_12);
 }
